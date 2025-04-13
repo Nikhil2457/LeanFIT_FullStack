@@ -1,0 +1,89 @@
+/* SchedulePage.css */
+
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+  }
+  
+  /* Main container for the schedule */
+  .schedule-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+    overflow-y: auto; /* Enables vertical scrolling */
+    max-height: 80vh; /* Limit the container height to 80% of the viewport height */
+  }
+  
+  /* Title styling */
+  .schedule-title {
+    font-size: 2.5rem;
+    color: #1e90ff;
+    text-align: center;
+    margin-bottom: 20px;
+    animation: slideIn 1.5s ease-out;
+  }
+  
+  /* Schedule text styling */
+  .schedule-text {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.05);
+    animation: textFadeIn 2s ease-out;
+    word-wrap: break-word; /* Ensures text breaks and stays inside container */
+    overflow-x: scroll; /* Prevents horizontal scrolling */
+  }
+  
+  /* Loading text styling */
+  .loading-text {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #888;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  /* Animation Effects */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes textFadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  

@@ -1,0 +1,151 @@
+/* UserQuestions.css */
+
+/* General Reset and Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7fa; /* Soft light gray */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Container for the entire questions form */
+  .question-container {
+    width: 100%;
+    max-width: 650px; /* Adjusted width for a professional, neat look */
+    padding: 40px 30px;
+    background-color: #ffffff; /* Clean white background */
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    animation: fadeIn 1s ease-in-out;
+    overflow: hidden;
+  }
+  
+  /* Fade-in effect for the container */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Styling for the question box */
+  .question-box {
+    text-align: center;
+    padding: 30px 35px;
+    background-color: #f9fbfc; /* Very light grayish-blue background for boxes */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    animation: slideUp 1s ease-out;
+  }
+  
+  /* Animation for the question box sliding up */
+  @keyframes slideUp {
+    from {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Styling for the question labels */
+  .question-box h2 {
+    font-size: 1.3rem;
+    color: #2c3e50; /* Darker shade of gray for text */
+    margin-bottom: 20px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Input field styling */
+  .input-field {
+    width: 100%;
+    padding: 14px 18px;
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f1f3f7;
+    color: #333;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .input-field:focus {
+    border-color: #3498db; /* Soft blue focus border */
+    box-shadow: 0 2px 12px rgba(52, 152, 219, 0.3);
+    outline: none;
+  }
+  
+  /* Next button styling */
+  .next-button {
+    padding: 14px 35px;
+    background-color: #3498db; /* Professional blue color */
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .next-button:hover {
+    background-color: #2980b9; /* Slightly darker blue on hover */
+    transform: scale(1.05);
+  }
+  
+  .next-button:active {
+    transform: scale(1);
+  }
+  
+  /* Form title and subtitle styling */
+  .question-container h1 {
+    font-size: 1.8rem;
+    color: #2c3e50; /* Dark gray for title */
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 700;
+  }
+  
+  .question-container p {
+    font-size: 1rem;
+    color: #7f8c8d; /* Light gray for subtitles */
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .question-container {
+      padding: 20px;
+    }
+  
+    .question-box {
+      padding: 20px 25px;
+    }
+  
+    .input-field {
+      font-size: 1rem;
+    }
+  
+    .next-button {
+      font-size: 1rem;
+    }
+  }
+  

@@ -1,0 +1,25 @@
+version: "3"
+services:
+  functions:
+    build: ./functions
+    ports:
+      - "5001:5001"
+    volumes:
+      - ./functions:/app
+    # command: node index.js   # Remove this line to rely on the Dockerfile's CMD
+
+  backend:
+    build: ./leanfit-backend
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./leanfit-backend:/app
+    command: node index.js
+
+  frontend:
+    build: ./leanfit-frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./leanfit-frontend:/app
+    command: npm start
